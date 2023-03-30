@@ -1,0 +1,359 @@
+/* Importando fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Titillium+Web:wght@600&display=swap');
+
+/* Resetando CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* deslizar gostosinho sem js (͠≖ ͜ʖ͠≖)👌 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Parte 1 - SeComp */
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    background-color: #1E1E1E80;
+    width: 100%;
+}
+
+.container .logo {
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+
+}
+
+#btn-mobile {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+nav .barra ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    font-family: 'Titillium Web', sans-serif;
+    margin-right: 64px;
+}
+
+nav .barra ul li {
+    padding: 0 20px;
+    color: #FFFFFF;
+}
+
+nav .barra ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    background-color: transparent;
+    background-image: linear-gradient(to top, #1E1E1E, transparent), url(../img/hero-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 460px;
+}
+
+.titulo {
+    color: #FFFFFF;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    margin-left: 99px;
+}
+
+.subtitulo {
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-left: 99px;
+
+}
+
+.tema {
+    color: #FFFFFF;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    margin-left: 99px;
+    margin-bottom: 130px;
+}
+
+/* Parte 2 - Descrição */
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.chamada {
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.legenda {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+
+.corpo {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    margin: 30px;
+    margin-bottom: 90px;
+}
+
+/* Parte 3 - Agenda */
+.agenda {
+    display: flex;
+    flex-direction: column;
+    background-color: #403FFF;
+    color: #FFFFFF;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.titulo1 {
+    font-size: 1rem;
+    margin-left: 99px;
+    margin-top: 80px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.titulo2 {
+    font-size: 1rem;
+    margin-left: 99px;
+    margin-bottom: 36px;
+}
+
+.dias {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin-left: 99px;
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+/* slider */
+.manual-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px;
+    border: solid;
+    background-color: #403FFF;
+    border-color: #403FFF;
+    border-radius: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.manual-btn:hover {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-radius: 20px;
+    color: #403FFF;
+}
+.slides {
+    display: none;
+}
+
+/*
+.slider {
+    height: 595px;
+    overflow: hidden;
+}
+
+#dia1:checked ~ .all-cards {
+    margin-top: 0;
+}
+
+#dia2:checked ~ .all-cards {
+    margin-top: -595px;
+}
+
+#dia3:checked ~ .all-cards {
+    margin-top: -595px;
+}
+*/
+
+/* cards */
+.all-cards-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 99px;
+    margin-right: 99px;
+    margin-bottom: 120px;
+    flex-wrap: wrap;
+}
+.all-cards-2, .all-cards-3 {
+    display: none;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 230px;
+    padding: 20px;
+    margin: 30px;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.card-hora {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+}
+
+.card-local {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.card-tema {
+    font-size: 18px;
+}
+
+.card-palestrante {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.card-mini {
+    font-size: 13px;
+    color: #403FFF;
+    margin-bottom: 8px;
+    border: solid;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-radius: 20px;
+    margin-right: 130px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.icones {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icones img {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Parte 4 - Hackathon */
+.hack {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/hackathon-background.png);
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    background-size: cover;
+    background-position: center;
+    justify-content: baseline;
+}
+
+.data {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    margin-left: 99px;
+    margin-top: 140px;
+}
+
+.evento {
+    font-size: 45px;
+    margin-left: 99px;
+    margin-bottom: 120px;
+}
+
+.sub {
+    font-size: 60px;
+}
+
+/* Parte 5 - Footer */
+.rodape {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-family: 'Titillium Web', sans-serif;
+    height: 280px;
+}
+
+.logo-inatel {
+    margin-left: 99px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.infos {
+    font-size: 18px;
+    margin-left: 99px;
+    margin-bottom: 30px;
+}
+
+.autor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    font-size: 10px;
+}
+
+.logo-cp2 {
+    margin-left: 8px;
+}

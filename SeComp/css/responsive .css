@@ -1,0 +1,63 @@
+/* Responsividade */
+
+@media (max-width: 740px){
+    /* MENU burguer Veggie*/
+    #menu{
+        display: flex;
+        position: fixed;
+        width: 55%;
+        height: 0px;
+        top: 80px;
+        right: 0px;
+        margin: 0px;
+        flex-direction: column;
+        background: #1E1E1E80;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: 70%;
+        visibility: visible;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+    #hamburguer{
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;background: #FFFFFF;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+
+    /* Datas da Programação */
+    /* deixar dias apenas com a parte numerica (xx/xx)*/
+}
